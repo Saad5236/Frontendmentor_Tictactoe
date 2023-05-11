@@ -1,0 +1,130 @@
+<!-- CROSS ICON: <i class="fa-solid fa-xmark"></i> -->
+<!-- CIRCLE ICON: <i class="fa-regular fa-circle"></i> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- FONTAWESOME ICONS KIT V6.X-->
+    <script
+      src="https://kit.fontawesome.com/72af40638e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section class="main-menu">
+        <div class="heading-icons">
+          <i class="fa-solid fa-xmark header-cross-logo"></i>
+          <i class="fa-regular fa-circle header-circle-logo"></i>
+        </div>
+
+        <div class="icon-selection-panel">
+          <div class="icon-selection-header">PICK PLAYER 1'S MARK</div>
+
+          <div class="icon-selection-btns">
+            <div class="btn-selection-cross selected-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="btn-selection-circle">
+              <i class="fa-regular fa-circle"></i>
+            </div>
+          </div>
+
+          <div class="icon-selection-note">REMEMBER: X GOES FIRST</div>
+        </div>
+
+        <a href="#" class="mode-selection-btn player-vs-cpu-btn"
+          >NEW GAME (VS CPU)</a
+        >
+        <a href="#" class="mode-selection-btn player-vs-player-btn"
+          >NEW GAME (VS PLAYER)</a
+        >
+      </section>
+
+      <section class="main-panel">
+        <section class="game-board-nav">
+          <div class="game-logo">
+            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="icon-turn"><i class="fa-solid fa-xmark"></i> TURN</div>
+          <div class="restart-btn">
+            <i class="fa-solid fa-power-off"></i>
+          </div>
+        </section>
+
+        <section class="game-board">
+          <div class="game-board-row game-board-row-1">
+            <div class="game-board-box">
+              <!-- <i class="fa-regular fa-circle circle-icon-placed"></i> -->
+            </div>
+            <div class="game-board-box">
+              <!-- <i class="fa-solid fa-xmark cross-icon-placed"></i> -->
+            </div>
+            <div class="game-board-box"></div>
+          </div>
+
+          <div class="game-board-row game-board-row-2">
+            <!-- <div class="game-board-box cross-box-win"></div>
+            <div class="game-board-box circle-box-win"></div> -->
+            <div class="game-board-box"></div>
+            <div class="game-board-box"></div>
+            <div class="game-board-box"></div>
+          </div>
+
+          <div class="game-board-row game-board-row-3">
+            <div class="game-board-box"></div>
+            <div class="game-board-box"></div>
+            <div class="game-board-box"></div>
+          </div>
+        </section>
+
+        <section class="scoreboards-panel">
+          <div class="player-1-scoreboard scoreboard">
+            <div class="scoreboard-text player-1-text">
+              <span class="player-1-name">PLAYER 1</span>
+            </div>
+            <div class="player-1-score score">0</div>
+          </div>
+
+          <div class="ties-scoreboard scoreboard">
+            <div class="scoreboard-text ties-text">TIES</div>
+            <div class="ties-score score">0</div>
+          </div>
+
+          <div class="player-2-scoreboard scoreboard">
+            <div class="scoreboard-text player-2-text">
+              <span class="player-2-name">PLAYER 2</span>
+            </div>
+            <div class="player-2-score score">0</div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <section class="win-panel-bg">
+      <section class="win-panel">
+        <section class="win-panel-content">
+          <div class="win-person">YOU WON!</div>
+          <div class="next-round-info">
+            <!-- <i class="fa-solid fa-xmark win-panel-cross"></i> -->
+            <!-- <div>TAKES THE ROUND</div> -->
+          </div>
+          <div class="win-panel-btns">
+            <div class="quit-btn">QUIT</div>
+            <div class="next-round-btn">NEXT ROUND</div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
